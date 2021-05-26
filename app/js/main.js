@@ -22,7 +22,6 @@ $(window).on("load" , function () {
             setTimeout(() => {
                 if ($('.interior__slide').eq(index - 1).hasClass('swiper-slide-active')) {
                     $('.interior-current').text('0' + index)
-                    console.log(index)
                     if (index === 0) {
                         $('.interior-current').text($('.interior__quantity').text())
                     }
@@ -62,7 +61,6 @@ $(window).on("load" , function () {
             setTimeout(() => {
                 if ($('.customers__slide').eq(index - 1).hasClass('swiper-slide-active')) {
                     $('.customers-current').text('0' + index)
-                    console.log(index)
                     if (index === 0) {
                         $('.customers-current').text($('.customers-quantity').text())
                     }
