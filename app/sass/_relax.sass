@@ -1,0 +1,74 @@
+.relax
+  background: #2B0444
+  padding: 0 20px
+  .container
+    position: relative
+    padding-bottom: 193px
+    @media (max-width: 768px)
+      padding-bottom: 80px
+    h1
+      font-family: Tenor Sans, sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 36px
+      line-height: 150%
+      text-transform: uppercase
+      color: #FFFFFF
+      position: absolute
+      @media (max-width: 768px)
+        font-size: 30px
+        text-align: center
+    .relax__images
+      display: flex
+      overflow-x: auto
+      max-width: 100%
+      padding-bottom: 130px
+      @media (max-width: 768px)
+        margin-top: 100px
+        padding-bottom: 50px
+      .relax__column
+        margin-top: 154px
+        display: flex
+        &:not(:last-child)
+          margin-right: 115px
+          @media (max-width: 1024px)
+            margin-right: 50px
+          @media (max-width: 768px)
+            margin-right: 20px
+        img
+          width: 100%
+          height: 100%
+          object-fit: cover
+      .relax__column_small
+        img
+          width: 278px
+          height: 330px
+          @media (max-width: 1024px)
+            width: 200px
+            height: 300px
+      .relax__column_big
+        @media (max-width: 1024px)
+          margin-top: 204px
+        img
+          width: 376px
+          height: 492px
+          @media (max-width: 1024px)
+            width: 300px
+            height: 400px
+      .relax__column_multiply
+        margin-top: 0
+        flex-direction: column
+        @media (max-width: 1024px)
+          margin-top: 80px
+        img
+          &:first-child
+            width: 282px
+            height: 339px
+            @media (max-width: 1024px)
+              width: 200px
+              height: 270px
+              margin-bottom: 30px
+          &:last-child
+            width: 175px
+            height: 191px
+            margin-top: auto

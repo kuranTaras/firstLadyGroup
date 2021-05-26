@@ -1,0 +1,208 @@
+.footer
+  background-image: url("../img/footer/01.png")
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  position: relative
+  padding: 0 20px
+  .container
+    padding: 105px 0 115px 0
+    position: relative
+    z-index: 5
+    @media (max-width: 768px)
+      padding-bottom: 30px
+      padding-top: 130px
+    h1
+      position: absolute
+      font-family: Tenor Sans, sans-serif
+      display: flex
+      flex-direction: column
+      font-style: normal
+      font-weight: normal
+      font-size: 8.2vw
+      line-height: 150%
+      text-transform: uppercase
+      color: #FFFFFF
+      width: 100%
+      top: -100px
+      z-index: -1
+      @media (max-width: 1024px)
+        top: -50px
+      @media (max-width: 500px)
+        top: -20px
+      span
+        margin-left: auto
+    .footer__content
+      display: flex
+      width: 100%
+      @media (max-width: 1024px)
+        justify-content: space-between
+      @media (max-width: 768px)
+        flex-direction: column
+      h2
+        font-family: TT Norms, sans-serif
+        font-style: normal
+        font-weight: 500
+        font-size: 18px
+        line-height: 180%
+        text-transform: uppercase
+        color: #FFFFFF
+      .footer__left
+        display: flex
+        flex-direction: column
+        width: 100vw
+        max-width: 375px
+        @media (max-width: 768px)
+          margin: 0 auto 50px auto
+          max-width: 320px
+        h2
+          margin-bottom: 30px
+        form
+          display: flex
+          flex-direction: column
+          textarea, input
+            background: none
+            outline: none
+            font-family: TT Norms, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 150%
+            color: #FFFFFF
+          textarea
+            border: 1px solid #DEBA7B
+            padding: 20px
+            resize: none
+          input
+            padding: 20px 0
+            border-bottom: 1px solid #DEBA7B
+          .footer__button
+            display: flex
+            position: relative
+            background: none
+            width: 100%
+            border-radius: 900px
+            cursor: pointer
+            margin-top: 30px
+            .footer__button-wrapper
+              background: linear-gradient(101.98deg, #EFC986 29.25%, #CF9838 100.31%)
+              border: 1px solid #EEC639
+              box-sizing: border-box
+              box-shadow: inset 0px -10px 30px #F3D7A5
+              border-radius: 900px
+              padding: 27px 37px 28px 37px
+              display: flex
+              width: 100%
+              align-items: center
+              position: relative
+              overflow: hidden
+              span
+                font-family: TT Norms, sans-serif
+                font-style: normal
+                font-weight: bold
+                font-size: 14px
+                line-height: 17px
+                text-transform: uppercase
+                color: #885932
+                position: relative
+                z-index: 1
+                margin: 0 auto
+              .footer__blurs
+                div
+                  &:first-child
+                    position: absolute
+                    width: 156.98px
+                    height: 62.25px
+                    left: 54px
+                    bottom: 55px
+                    background: #FADFBE
+                    opacity: 0.5
+                    filter: blur(20px)
+                    transform: rotate(-45deg)
+                  &:last-child
+                    position: absolute
+                    width: 156.98px
+                    height: 37.5px
+                    background: #FADFBE
+                    opacity: 0.7
+                    filter: blur(20px)
+                    transform: rotate(-45deg)
+                    right: 29px
+                    top: 32px
+      .footer__right
+        margin-left: 120px
+        display: flex
+        flex-direction: column
+        margin-top: auto
+        margin-bottom: 55px
+        max-width: 250px
+        @media (max-width: 1024px)
+          margin-left: 30px
+        @media (max-width: 768px)
+          margin: 0 auto
+          width: 100%
+          max-width: 375px
+        h2
+          margin-bottom: 30px
+        .footer__phones
+          display: flex
+          flex-direction: column
+          span
+            font-family: Tenor Sans, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 36px
+            line-height: 150%
+            text-transform: uppercase
+            color: #FFFFFF
+            cursor: pointer
+        .footer__socials
+          display: flex
+          margin-top: 40px
+          .footer__social
+            width: 56px
+            height: 56px
+            border-radius: 50%
+            background: #C7144C
+            display: flex
+            align-items: center
+            justify-content: center
+            &:not(:last-child)
+              margin-right: 20px
+  .absolute
+    overflow: hidden
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 1
+    .footer__background-filters
+      div
+        width: 100%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 0
+        z-index: 1
+        &:first-child
+          background: linear-gradient(90deg, #2C0444 0%, rgba(43, 4, 68, 0) 55.64%)
+        &:nth-child(2)
+          background: linear-gradient(180deg, rgba(24, 4, 68, 0) 0%, rgba(22, 5, 50, 0.8) 100%)
+        &:last-child
+          background: linear-gradient(180deg, rgba(43, 43, 43, 0) 0%, #060518 100%), #2B0444
+          opacity: 0.5
+    .footer__ellipses
+      div
+        width: 883px
+        height: 883px
+        border-radius: 50%
+        border: 1px solid #DEBA7B
+        position: absolute
+        z-index: 2
+        &:first-child
+          right: -150px
+          bottom: 317px
+        &:last-child
+          bottom: -67px
+          right: -173px

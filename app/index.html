@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Useful meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.min.css">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a class="header-logo" href="">FLG</a>
+            <a class="header-contact" href="">Связаться с нами</a>
+        </div>
+    </header>
+    <div class="main">
+        <section class="banner">
+            <div class="container">
+                <div class="banner__text">
+                    <h1>First Lady<br>
+                        <span>Group</span></h1>
+                    <div class="banner__paragraphs">
+                        <p>Webcam-агентство
+                            с 10 летним опытом
+                            и безупречной репутацией</p>
+                        <p>Мы создали все условия, чтобы ты раскрыла себя
+                            и зарабатывала больше <span class="banner-round"></span></p>
+                    </div>
+                </div>
+                <div class="banner__link">
+                    <a href="">
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="15" height="15">
+                                <rect x="3.05176e-05" width="15" height="15" fill="url(#pattern0)"/>
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <circle cx="6.19568" cy="6.19546" r="8.80435" fill="#885932"/>
+                            </g>
+                            <defs>
+                                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0" transform="scale(0.01)"/>
+                                </pattern>
+                                <image id="image0" width="100" height="100" xlink:href="data:image/png;base64,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"/>
+                            </defs>
+                        </svg>
+                        <span>Заполнить анкету</span>
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="15" height="15">
+                                <rect x="3.05176e-05" width="15" height="15" fill="url(#pattern0)"/>
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <circle cx="6.19568" cy="6.19546" r="8.80435" fill="#885932"/>
+                            </g>
+                            <defs>
+                                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0" transform="scale(0.01)"/>
+                                </pattern>
+                                <image id="image0" width="100" height="100" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABmJLR0QA/wD/AP+gvaeTAAAI10lEQVRYCe2Ze2xUVR7H78ykU0vZza6bNRtlXTeWbIFQYDeuNT6iURNlxS5oQ5+sJkKIGnchgomPhH9F0USNEkRt2pnWZoJuDAoqG1j2YVHWR4GVlG7iKkVXCYoI2tbO7Oc0M3a4j5k7d+6ZuYO/5vftPefcc36/3/1+7znn3rmGIX/CgDAgDAgDwoAwIAwIA8KAMCAMCAPCgDAgDAgDwoAwIAwIA5XPQEjnJbS3t89OpVLXhMPhBo71xKoDUZCxrymcAh8YhvFv+hwAu/v6+g5S126dnZ2zJiYmLg+FQnMINhtcYBjGNFADMjZGYZg+B8ntPa5lR09Pz/u0aTHfBWlra5tP0stIvpmMZwAv9hEEbMPH5ng8/pYXB05jyO+3+L6N8wvBecCLfURuCa6zOxaLvefFgdMYXwRZt25d+NChQ00EuQdcDPy0f0Hgei48gdMU8GIhhFiKnzUM/jXw0wbw+2BdXd1L8JAs1nHRgrAsNZLERjAPaDPuyL04X9vb27uTo2sjv6vpvB74LQQupwxR3kkmkyvJ782p1sJLngVpbm6uqaqqWk8itxM2DEphKeJtBGtYx0/mCkh+06urqzcg5HL6eb5OxhZiaoY8AS/3dHV1fVPIwExfT4ly183GwfNgLiiHDXM3/p7N/4BdcPKbi2gvIsaFdud1txF7kIeFpeR3sNBYBd/ZrMULCfImKJcYhDbq2FAHIP4GVclGa2vrIupvlEsMYhvEbiC/veR3vaoXgoIEIcBinL8AakG5bToJbOEGaeI4aZSXQMQWKkHIrxZhXiSn7/Ijr7zmesnq6Oi4iQD9eIyAINk4ySxhCQulxaiiHiQbZwlbzFPiy26SciVIS0vLgkgk8nccTgNBtJPppIIwM9KpnHb4ihvmUvaUwdNabSp5BVm2bNlP2KDeZuz5QMwjA8yS/4yOjv4mkUgcz+Ui7x6CGI/iQMSAhGKM5f7CaDT6SD4fOWcIG9JClH05nxM5XxAD1/Bz0F+cRjjOEF6sIojxsNNAaffMwKP8xOLIu+MJ3jbbCDkLiPnLwNzh4eGlTi6dBGFyhNY4DZL24hhgP1nr5MFWEN52r2DAXCCmh4H5cHyZnWtbQXjBusWQP60MsAT9wS6ARZD0hnOjXWdp848BbvomvFmeci2CDA0NLaDj2UBMIwPsIz/l56gGcwiLIEyly82dpK6HAURRe/Vpzi2CcFY2c0gokVm4thOkvkTJSBjDsHBtJ8jPhamSMXC+OZKdID80d5K6NgYsXNsJEtRvCtpYKaPj6ebYdoKoL3DmflLXw4CFaztBvtQTW7zaMHDc3CaCmBkpbd1y84sgpRXAHC2/ILypHzGPkroeBnhTHzF7tsyQZDK5z9xJ6noY4Obfb/ZsEYROB8ydpK6HAWaIhWsRRA/Xrrza3fwWQUZHR9/H2wkgppeB47W1tQfNISyCJBKJMabSa+aOUvedge2bNm1y9WKoIm9T/wRaGbDl2DJDVAqsba9yTAExPQwk4dh2FbIVJB6PHyaP14GYBgYQY3ssFvvYzrWtIOmOT6ePcvCfAUduHQUZGRn5M3nYqki7mHcGRg4fPrzVabijILt27fqWQc8CMX8ZeCbNra1XR0FU77GxsYc4HgNi/jDwaZpTR285BeGd5Dgb0AbH0XKiUAY2wOlXuQblFEQN5CXxCY5HgVhxDPyP2fFkPhd5BeERWP1mvyqfIzmfl4E/5psdykNI/XODtra211i+rnXTV/pYGNjKjb3I0mrTkHeGZMbwnWQF5ZNArDAGTrLs3+l2SMRtx/37938xb948Jch1bsdIv0kGVvX29u6YLLn451oQ5WtwcHBPQ0PDLynPB2J5GGBmPIcY9+fpdtpp10tWZlQ4HL6D8gEgloMB9tt3otHo7Tm62J4K2bbmaezs7JzFnvIPuv0YiFkZOBaJRC7p7u4esp7K3eJJEOWytbX1MmbL65TPAmJTDJyieCVPVW9xLNgK2kOyvbPJf8gmf4S2JiA2xcDyeDz+ylS1sJJnQVQYNvl32eSVKDdQ9zzbGHsmWIp9YwViPFfMxRQliAq8b9++t5kpX1C+DnxfjQeq1J8Q46liCShaEJUAM2UPoiQpXwW+j3Yvj7cb/LhwXwRRiSDKbpavDwzD+B3wzS++gmzjTI1bEeNJv5IM+eUo46e9vV3tJ/3Up4Ez2U4gxhLE2OHnRfouiEou/Ui8hfI54Ey0T9jAb4rFYv/0++K0CKKSbGlpOZeXIyVKo6qfKUCIv05MTNzc19d3VMc1aVvreU85MWPGjFhNTc25JL4AVLyxRG3mI1Nrf3//CV0Xo22GZCfMt5QV3Fnqy2NVdnsFldXmfSf7xSbdOZdEEHURiHIFoiQoV9q+8il538x+8Tdy124F/9rrNSPurt1c2KWM3wMqxQZYpi4plRiKlJLNEBUsjVBHR8ddXOh66lEQRBvj5lmLEI+RXAqUzMohyOTF8b5yEYU4mAkCY9woQzwdtvf09OwtR1KRcgRVMfkN7Eh9ff1mLv4H1C8GQbDHxsfH1SPth+VKpmwzJPuCmS0d1B8HPwLlsM9Zou5gieorR/DsmIEQRCXEV8hz+Aq5kfJiUEp7gXeLlYlE4rNSBnWKFRhBMgnyeNzM3aqEOTvTpul4jP1iJU9/CU3+PbkNexqlcZAiqKqqag4htgJdtlXFULF0BfDqN3CCqAvp6ur6ZObMmU3cwaupfw38slM4WqV8qxiUA2eBW7LMDLGE/YIl7BnarwbF2A4Evo1Z8d9inOgeG9IdwCf/IYRZjjAP4089JnNwbeq7xd0I8TQjSvqSR7yCrVIEmbww3vB/xV3eZRhGI3Bjb/Cec0t3d/eQm85B6FNRgijCmpubI9XV1Q8gzP3UI8DOJjh/H7NC/TwT+FmRfQEVJ0gmeZawq0KhUC/1n4Fs+xgx2hFjZ3ZjpZQD+ZTlhjxFOMQ30ncAZGyAJapRncs0VNqxYmdIhmi1hEWj0UdUnTfu1bxxT6iyQBgQBoQBYUAYEAaEAWFAGJhi4P+GP4cNBH/uXgAAAABJRU5ErkJggg=="/>
+                            </defs>
+                        </svg>
+                        <div class="banner__blurs">
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="absolute">
+                <div class="banner__circles">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="banner-background"></div>
+            </div>
+        </section>
+        <section class="best">
+            <div class="container">
+                <div class="best__top">
+                    <h1>Лучшая вебкам-студия в Украине</h1>
+                    <p>Поэтому, если ты ищешь место, где ты сможешь реализовать свои амбиции и в разы увеличить доход, то тогда тебе к нам.</p>
+                </div>
+                <div class="best__content">
+                    <div class="best__column">
+                        <div class="best__paragraphs">
+                            <p><span>Тебе понравится</span> в нашем чисто женском коллективе, в наших комфортабельных “офисах”.</p>
+                            <p><span>Опытные администраторы</span> всегда помогут решить вопросы максимально быстро,
+                                а компания предоставит помощь
+                                и поддержку, в случае необходимости.</p>
+                            <p>А еще, мы любим баловать наших
+                                моделей  <span>премиями и бонусами.</span></p>
+                        </div>
+                        <h4>Мы уверены, что<br>
+                            оправдаем твои ожидания</h4>
+                    </div>
+                    <div class="best__column">
+                        <img src="img/best/01.png" alt="">
+                        <h3>LADY</h3>
+                    </div>
+                    <div class="best__column">
+                        <a href="" class="best__arrow">
+                            <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.293 21.293L53.4751 53.4751" stroke="#C7144C" stroke-width="4"/>
+                                <path d="M54.7766 18.2588V54.7765H18.2589" stroke="#C7144C" stroke-width="4"/>
+                            </svg>
+                        </a>
+                        <div class="best__paragraphs">
+                            <p><span>Мы уже 10 лет в этой сфере</span>
+                                и понимаем ее как никто лучше, поэтому предлагаем не работу,
+                                а взаимовыгодное партнерство.</p>
+                            <p><span>Очевидно, что без тебя
+                                не будет магии и соответственно,
+                                наша задача</span> - создать условия,
+                                в которых ты сможешь блистать
+                                и ничего не мешало зарабатывать.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute">
+                <div class="best-logo">first lady group</div>
+                <div class="best-blur"></div>
+            </div>
+        </section>
+        <section class="what">
+            <div class="container">
+                <div class="what__top">
+                    <h1>Что мы предлагаем?</h1>
+                    <div class="what__nav">
+                        <div class="what__prev">
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.5">
+                                    <path d="M19.0947 10.6782L2.66442 10.6782" stroke="#C7144C" stroke-width="2"/>
+                                    <path d="M11.3219 20.0001L2 10.6782L11.3219 1.35632" stroke="#C7144C" stroke-width="2"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="what__numbers">
+                            <span class="what-current">01</span>
+                            <span>/</span>
+                            <span class="what-quantity"></span>
+                        </div>
+                        <div class="what__next">
+                            <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.29095 27.5178L49.8033 27.5178" stroke="#C7144C" stroke-width="4"/>
+                                <path d="M25.8219 1.6959L51.6438 27.5178L25.8219 53.3397" stroke="#C7144C" stroke-width="4"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="what__slider-wrapper">
+                    <div class="what__slider swiper-container">
+                        <div class="what__wrapper swiper-wrapper">
+                            <div class="what__slide swiper-slide">
+                                <div class="what__img">
+                                    <img src="img/what/01.png" alt="">
+                                </div>
+                                <div class="what__text">
+                                    <h6>01</h6>
+                                    <h2>Честный процент и выплаты без задержек</h2>
+                                    <div class="what__paragraphs">
+                                        <p><span>Ты получишь 50%</span> с возможностью увеличить  свои проценты.  <span>Тут все зависит от тебя</span> - мы всегда готовы пойти на встречу.</p>
+                                        <p><span>Важно,</span> ты получишь свою часть  в долларах, без трат на комиссию при конвертации
+                                            в гривны.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="what__slide swiper-slide">
+                                <div class="what__img">
+                                    <img src="img/what/02.png" alt="">
+                                </div>
+                                <div class="what__text">
+                                    <h6>01</h6>
+                                    <h2>Возможность вырасти в заработке</h2>
+                                    <div class="what__paragraphs">
+                                        <p>Мы знаем вдоль и поперек все нюансы сферы и схемы вывода в топ. А также знаем, как тебе увеличить свою эффективность.</p>
+                                        <p>Для это у нас есть штатный психолог и множество тренингов.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="what__slide swiper-slide">
+                                <div class="what__img">
+                                    <img src="img/what/03.png" alt="">
+                                </div>
+                                <div class="what__text">
+                                    <h6>01</h6>
+                                    <h2>Честный процент и выплаты без задержек</h2>
+                                    <div class="what__paragraphs">
+                                        <p><span>Ты получишь 50%</span> с возможностью увеличить  свои проценты.  <span>Тут все зависит от тебя</span> - мы всегда готовы пойти на встречу.</p>
+                                        <p><span>Важно,</span> ты получишь свою часть  в долларах, без трат на комиссию при конвертации
+                                            в гривны.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="what__slide swiper-slide">
+                                <div class="what__img">
+                                    <img src="img/what/01.png" alt="">
+                                </div>
+                                <div class="what__text">
+                                    <h6>01</h6>
+                                    <h2>Честный процент и выплаты без задержек</h2>
+                                    <div class="what__paragraphs">
+                                        <p><span>Ты получишь 50%</span> с возможностью увеличить  свои проценты.  <span>Тут все зависит от тебя</span> - мы всегда готовы пойти на встречу.</p>
+                                        <p><span>Важно,</span> ты получишь свою часть  в долларах, без трат на комиссию при конвертации
+                                            в гривны.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="what__slide swiper-slide">
+                                <div class="what__img">
+                                    <img src="img/what/01.png" alt="">
+                                </div>
+                                <div class="what__text">
+                                    <h6>01</h6>
+                                    <h2>Честный процент и выплаты без задержек</h2>
+                                    <div class="what__paragraphs">
+                                        <p><span>Ты получишь 50%</span> с возможностью увеличить  свои проценты.  <span>Тут все зависит от тебя</span> - мы всегда готовы пойти на встречу.</p>
+                                        <p><span>Важно,</span> ты получишь свою часть  в долларах, без трат на комиссию при конвертации
+                                            в гривны.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="what__slide swiper-slide">
+                                <div class="what__img">
+                                    <img src="img/what/01.png" alt="">
+                                </div>
+                                <div class="what__text">
+                                    <h6>01</h6>
+                                    <h2>Честный процент и выплаты без задержек</h2>
+                                    <div class="what__paragraphs">
+                                        <p><span>Ты получишь 50%</span> с возможностью увеличить  свои проценты.  <span>Тут все зависит от тебя</span> - мы всегда готовы пойти на встречу.</p>
+                                        <p><span>Важно,</span> ты получишь свою часть  в долларах, без трат на комиссию при конвертации
+                                            в гривны.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="what__slide swiper-slide">
+                                <div class="what__img">
+                                    <img src="img/what/01.png" alt="">
+                                </div>
+                                <div class="what__text">
+                                    <h6>01</h6>
+                                    <h2>Честный процент и выплаты без задержек</h2>
+                                    <div class="what__paragraphs">
+                                        <p><span>Ты получишь 50%</span> с возможностью увеличить  свои проценты.  <span>Тут все зависит от тебя</span> - мы всегда готовы пойти на встречу.</p>
+                                        <p><span>Важно,</span> ты получишь свою часть  в долларах, без трат на комиссию при конвертации
+                                            в гривны.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="what__slide swiper-slide">
+                                <div class="what__img">
+                                    <img src="img/what/01.png" alt="">
+                                </div>
+                                <div class="what__text">
+                                    <h6>01</h6>
+                                    <h2>Честный процент и выплаты без задержек</h2>
+                                    <div class="what__paragraphs">
+                                        <p><span>Ты получишь 50%</span> с возможностью увеличить  свои проценты.  <span>Тут все зависит от тебя</span> - мы всегда готовы пойти на встречу.</p>
+                                        <p><span>Важно,</span> ты получишь свою часть  в долларах, без трат на комиссию при конвертации
+                                            в гривны.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="what-scrollbar swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute">
+                <img src="img/what/04.png" alt="">
+                <div class="what-blur"></div>
+            </div>
+        </section>
+        <section class="interior">
+            <div class="container">
+                <h1>Мы верим, что каждая девушка бриллиант, который требует достойную оправу</h1>
+                <div class="interior__content">
+                    <div class="interior__slider swiper-container">
+                        <div class="interior__wrapper swiper-wrapper">
+                            <div class="interior__slide swiper-slide interior__slide_active">
+                                <img src="img/interior/01.png" alt="">
+                                <span>Название интерьера</span>
+                            </div>
+                            <div class="interior__slide swiper-slide">
+                                <img src="img/interior/01.png" alt="">
+                                <span>Название интерьера</span>
+                            </div>
+                            <div class="interior__slide swiper-slide">
+                                <img src="img/interior/01.png" alt="">
+                                <span>Название интерьера</span>
+                            </div>
+                            <div class="interior__slide swiper-slide">
+                                <img src="img/interior/01.png" alt="">
+                                <span>Название интерьера</span>
+                            </div>
+                            <div class="interior__slide swiper-slide">
+                                <img src="img/interior/01.png" alt="">
+                                <span>Название интерьера</span>
+                            </div>
+                        </div>
+
+                        <div class="interior__dots swiper-pagination"></div>
+                        <div class="interior__nav">
+
+                            <h5>Поэтому тебя ждут самые классные интерьеры:</h5>
+                            <div class="interior__navigation">
+                                <div class="interior__prev">
+                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.5">
+                                            <path d="M19.0947 10.6781L2.66443 10.6781" stroke="#C7144C" stroke-width="2"/>
+                                            <path d="M11.3219 20L2 10.6781L11.3219 1.3562" stroke="#C7144C" stroke-width="2"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="interior__numbers">
+                                    <div class="interior-current">01</div>
+                                    <div>/</div>
+                                    <div class="interior__quantity"></div>
+                                </div>
+                                <div class="interior__next">
+                                    <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.29095 27.5176L49.8033 27.5176" stroke="#C7144C" stroke-width="4"/>
+                                        <path d="M25.8219 1.69566L51.6438 27.5176L25.8219 53.3395" stroke="#C7144C" stroke-width="4"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute">
+                <div class="interior-blur"></div>
+            </div>
+        </section>
+        <section class="relax">
+            <div class="container">
+                <h1>Так мы отдыхаем и развлекаемся</h1>
+                <div class="relax__images">
+                    <div class="relax__column relax__column_small">
+                        <img src="img/relax/01.png" alt="">
+                    </div>
+                    <div class="relax__column relax__column_big">
+                        <img src="img/relax/02.png" alt="">
+                    </div>
+                    <div class="relax__column relax__column_multiply">
+                        <img src="img/relax/03.png" alt="">
+                        <img src="img/relax/04.png" alt="">
+                    </div>
+                    <div class="relax__column relax__column_small">
+                        <img src="img/relax/01.png" alt="">
+                    </div>
+                    <div class="relax__column relax__column_big">
+                        <img src="img/relax/02.png" alt="">
+                    </div>
+                    <div class="relax__column relax__column_multiply">
+                        <img src="img/relax/03.png" alt="">
+                        <img src="img/relax/04.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="welcome">
+            <div class="container">
+                <div class="welcome__left">
+                    <h2>Приходи к нам и сама все увидишь</h2>
+                    <p>Заполняй анкету и мы перезвоним тебе
+                        в течение дня, и пригласим на собеседование</p>
+                    <div class="welcome__link">
+                        <a href="">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="15" height="15">
+                                    <rect x="3.05176e-05" width="15" height="15" fill="url(#pattern0)"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <circle cx="6.19568" cy="6.19546" r="8.80435" fill="#885932"/>
+                                </g>
+                                <defs>
+                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0" transform="scale(0.01)"/>
+                                    </pattern>
+                                    <image id="image0" width="100" height="100" xlink:href="data:image/png;base64,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"/>
+                                </defs>
+                            </svg>
+                            <span>Заполнить анкету</span>
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="15" height="15">
+                                    <rect x="3.05176e-05" width="15" height="15" fill="url(#pattern0)"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <circle cx="6.19568" cy="6.19546" r="8.80435" fill="#885932"/>
+                                </g>
+                                <defs>
+                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0" transform="scale(0.01)"/>
+                                    </pattern>
+                                    <image id="image0" width="100" height="100" xlink:href="data:image/png;base64,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"/>
+                                </defs>
+                            </svg>
+                            <div class="welcome__blurs">
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="welcome__right">
+                    <h4>Кстати, мы разыгрываем айфон 12
+                        среди новеньких моделей</h4>
+                    <div class="welcome__img">
+                        <img src="img/welcome/01.png" alt="">
+                        <div class="welcome__gift">
+                            <img src="img/welcome/03.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <h1>First Lady
+                    <span>Group</span></h1>
+            </div>
+            <div class="absolute">
+                <div class="welcome__rounds">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="welcome-background"></div>
+            </div>
+        </section>
+        <section class="customers">
+            <div class="container">
+                <div class="customers__top">
+                    <h1>Наши модели о работе с нами</h1>
+                    <div class="customers__nav">
+                        <div class="customers__prev">
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.5">
+                                    <path d="M19.0947 10.6781L2.66443 10.6781" stroke="#C7144C" stroke-width="2"/>
+                                    <path d="M11.3219 20L2 10.6781L11.3219 1.3562" stroke="#C7144C" stroke-width="2"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="customers__numbers">
+                            <span class="customers-current">01</span>
+                            <span>/</span>
+                            <span class="customers-quantity"></span>
+                        </div>
+                        <div class="customers__next">
+                            <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.29095 27.5177L49.8033 27.5177" stroke="#C7144C" stroke-width="4"/>
+                                <path d="M25.8219 1.69578L51.6438 27.5177L25.8219 53.3396" stroke="#C7144C" stroke-width="4"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="customers__content">
+                    <div class="customers__slider swiper-container">
+                        <div class="customers__wrapper swiper-wrapper">
+                            <div class="customers__slide swiper-slide">
+                                <div class="customers__text">
+                                    <div class="customers__profile">
+                                        <div class="customers__img">
+                                            <img src="img/customers/01.png" alt="">
+                                        </div>
+                                        <div class="customers__about">
+                                            <p>Доход модели: <span>XXXX</span><span>.$</span></p>
+                                            <h4 class="customers__show">Смотреть скриншоты</h4>
+                                        </div>
+                                    </div>
+                                    <div class="customers__feedback ">
+                                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam at consequatur ducimus eius eveniet ex fuga harum itaque nam natus perspiciatis porro quaerat quasi repellendus, saepe soluta ullam voluptas?“Текст отзыва Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                                        <h4><span>... “</span><span class="customers-button" data-open="Скрыть" data-close="Читать подробнее">Читать подробнее</span></h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="customers__slide swiper-slide">
+                                <div class="customers__text">
+                                    <div class="customers__profile">
+                                        <div class="customers__img">
+                                            <img src="img/customers/01.png" alt="">
+                                        </div>
+                                        <div class="customers__about">
+                                            <p>Доход модели: <span>XXXX</span><span>.$</span></p>
+                                            <h4 class="customers__show">Смотреть скриншоты</h4>
+                                        </div>
+                                    </div>
+                                    <div class="customers__feedback ">
+                                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam at consequatur ducimus eius eveniet ex fuga harum itaque nam natus perspiciatis porro quaerat quasi repellendus, saepe soluta ullam voluptas?“Текст отзыва Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                                        <h4><span>... “</span><span class="customers-button" data-open="Скрыть" data-close="Читать подробнее">Читать подробнее</span></h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="customers__slide swiper-slide">
+                                <div class="customers__text">
+                                    <div class="customers__profile">
+                                        <div class="customers__img">
+                                            <img src="img/customers/01.png" alt="">
+                                        </div>
+                                        <div class="customers__about">
+                                            <p>Доход модели: <span>XXXX</span><span>.$</span></p>
+                                            <h4 class="customers__show">Смотреть скриншоты</h4>
+                                        </div>
+                                    </div>
+                                    <div class="customers__feedback ">
+                                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam at consequatur ducimus eius eveniet ex fuga harum itaque nam natus perspiciatis porro quaerat quasi repellendus, saepe soluta ullam voluptas?“Текст отзыва Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                                        <h4><span>... “</span><span class="customers-button" data-open="Скрыть" data-close="Читать подробнее">Читать подробнее</span></h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="customers__slide swiper-slide">
+                                <div class="customers__text">
+                                    <div class="customers__profile">
+                                        <div class="customers__img">
+                                            <img src="img/customers/01.png" alt="">
+                                        </div>
+                                        <div class="customers__about">
+                                            <p>Доход модели: <span>XXXX</span><span>.$</span></p>
+                                            <h4 class="customers__show">Смотреть скриншоты</h4>
+                                        </div>
+                                    </div>
+                                    <div class="customers__feedback ">
+                                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam at consequatur ducimus eius eveniet ex fuga harum itaque nam natus perspiciatis porro quaerat quasi repellendus, saepe soluta ullam voluptas?“Текст отзыва Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                                        <h4><span>... “</span><span class="customers-button" data-open="Скрыть" data-close="Читать подробнее">Читать подробнее</span></h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="customers__slide swiper-slide">
+                                <div class="customers__text">
+                                    <div class="customers__profile">
+                                        <div class="customers__img">
+                                            <img src="img/customers/01.png" alt="">
+                                        </div>
+                                        <div class="customers__about">
+                                            <p>Доход модели: <span>XXXX</span><span>.$</span></p>
+                                            <h4 class="customers__show">Смотреть скриншоты</h4>
+                                        </div>
+                                    </div>
+                                    <div class="customers__feedback ">
+                                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam at consequatur ducimus eius eveniet ex fuga harum itaque nam natus perspiciatis porro quaerat quasi repellendus, saepe soluta ullam voluptas?“Текст отзыва Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                                        <h4><span>... “</span><span class="customers-button" data-open="Скрыть" data-close="Читать подробнее">Читать подробнее</span></h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="customers__slide swiper-slide">
+                                <div class="customers__text">
+                                    <div class="customers__profile">
+                                        <div class="customers__img">
+                                            <img src="img/customers/01.png" alt="">
+                                        </div>
+                                        <div class="customers__about">
+                                            <p>Доход модели: <span>XXXX</span><span>.$</span></p>
+                                            <h4 class="customers__show">Смотреть скриншоты</h4>
+                                        </div>
+                                    </div>
+                                    <div class="customers__feedback ">
+                                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam at consequatur ducimus eius eveniet ex fuga harum itaque nam natus perspiciatis porro quaerat quasi repellendus, saepe soluta ullam voluptas?“Текст отзыва Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                                        <h4><span>... “</span><span class="customers-button" data-open="Скрыть" data-close="Читать подробнее">Читать подробнее</span></h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="customers__slide swiper-slide">
+                                <div class="customers__text">
+                                    <div class="customers__profile">
+                                        <div class="customers__img">
+                                            <img src="img/customers/01.png" alt="">
+                                        </div>
+                                        <div class="customers__about">
+                                            <p>Доход модели: <span>XXXX</span><span>.$</span></p>
+                                            <h4 class="customers__show">Смотреть скриншоты</h4>
+                                        </div>
+                                    </div>
+                                    <div class="customers__feedback ">
+                                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam at consequatur ducimus eius eveniet ex fuga harum itaque nam natus perspiciatis porro quaerat quasi repellendus, saepe soluta ullam voluptas?“Текст отзыва Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                                        <h4><span>... “</span><span class="customers-button" data-open="Скрыть" data-close="Читать подробнее">Читать подробнее</span></h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="customers__slide swiper-slide">
+                                <div class="customers__text">
+                                    <div class="customers__profile">
+                                        <div class="customers__img">
+                                            <img src="img/customers/01.png" alt="">
+                                        </div>
+                                        <div class="customers__about">
+                                            <p>Доход модели: <span>XXXX</span><span>.$</span></p>
+                                            <h4 class="customers__show">Смотреть скриншоты</h4>
+                                        </div>
+                                    </div>
+                                    <div class="customers__feedback ">
+                                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam at consequatur ducimus eius eveniet ex fuga harum itaque nam natus perspiciatis porro quaerat quasi repellendus, saepe soluta ullam voluptas?“Текст отзыва Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                                        <h4><span>... “</span><span class="customers-button" data-open="Скрыть" data-close="Читать подробнее">Читать подробнее</span></h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="customers__slide swiper-slide">
+                                <div class="customers__text">
+                                    <div class="customers__profile">
+                                        <div class="customers__img">
+                                            <img src="img/customers/01.png" alt="">
+                                        </div>
+                                        <div class="customers__about">
+                                            <p>Доход модели: <span>XXXX</span><span>.$</span></p>
+                                            <h4 class="customers__show">Смотреть скриншоты</h4>
+                                        </div>
+                                    </div>
+                                    <div class="customers__feedback ">
+                                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam at consequatur ducimus eius eveniet ex fuga harum itaque nam natus perspiciatis porro quaerat quasi repellendus, saepe soluta ullam voluptas?“Текст отзыва Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                                        <h4><span>... “</span><span class="customers-button" data-open="Скрыть" data-close="Читать подробнее">Читать подробнее</span></h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="customers__slide swiper-slide">
+                                <div class="customers__text">
+                                    <div class="customers__profile">
+                                        <div class="customers__img">
+                                            <img src="img/customers/01.png" alt="">
+                                        </div>
+                                        <div class="customers__about">
+                                            <p>Доход модели: <span>XXXX</span><span>.$</span></p>
+                                            <h4 class="customers__show">Смотреть скриншоты</h4>
+                                        </div>
+                                    </div>
+                                    <div class="customers__feedback ">
+                                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam at consequatur ducimus eius eveniet ex fuga harum itaque nam natus perspiciatis porro quaerat quasi repellendus, saepe soluta ullam voluptas?“Текст отзыва Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                                        <h4><span>... “</span><span class="customers-button" data-open="Скрыть" data-close="Читать подробнее">Читать подробнее</span></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="customers-progressbar swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="try">
+            <div class="container">
+                <div class="try__top">
+                    <h1>Ты еще не пробовала
+                        и думаешь, подходит ли тебе это?</h1>
+                    <h3>Чтобы начать работать с нами,
+                        от тебя требует только возраст
+                        <span>от 18 лет и сильное желание зарабатывать от 1500% в месяц.</span></h3>
+                </div>
+                <div class="try__content">
+                    <div class="try__left">
+                        <p><span>Сейчас это быстрорастущая сфера,</span> множество девушек со всего мира решает таким образом
+                            свои финансовые проблемы, становятся независимыми и начинают жить по новому.</p>
+                        <p><span>Если ты постараешься, то ты будешь достаточно зарабатывать,</span> чтобы баловать себя и свою семью, чтобы иметь возможность заботится о них.</p>
+                        <p><span>Прилично ли это?</span> Конечно, ты по сути актриса, которая дает то, что страстно желает мужчина.
+                            Тем более, у многих наших девушек есть клиенты, которые больше ценят общение, флирт
+                            и готовы за это хорошо платить.</p>
+                    </div>
+                    <div class="try__center">
+                        <img src="img/try/01.png" alt="">
+                        <div class="try__center-text">
+                            <div class="try__link">
+                                <a href="">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="15" height="15">
+                                            <rect x="3.05176e-05" width="15" height="15" fill="url(#pattern0)"/>
+                                        </mask>
+                                        <g mask="url(#mask0)">
+                                            <circle cx="6.19568" cy="6.19546" r="8.80435" fill="#885932"/>
+                                        </g>
+                                        <defs>
+                                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                                <use xlink:href="#image0" transform="scale(0.01)"/>
+                                            </pattern>
+                                            <image id="image0" width="100" height="100" xlink:href="data:image/png;base64,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"/>
+                                        </defs>
+                                    </svg>
+                                    <span>Заполнить анкету</span>
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="15" height="15">
+                                            <rect x="3.05176e-05" width="15" height="15" fill="url(#pattern0)"/>
+                                        </mask>
+                                        <g mask="url(#mask0)">
+                                            <circle cx="6.19568" cy="6.19546" r="8.80435" fill="#885932"/>
+                                        </g>
+                                        <defs>
+                                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                                <use xlink:href="#image0" transform="scale(0.01)"/>
+                                            </pattern>
+                                            <image id="image0" width="100" height="100" xlink:href="data:image/png;base64,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"/>
+                                        </defs>
+                                    </svg>
+                                    <div class="try__blurs">
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <h4>Заполняй анкету и мы перезвоним тебе в течение дня, и пригласим
+                                на собеседование</h4>
+                        </div>
+                    </div>
+                    <div class="try__right">
+                        <a href="" class="try__arrow">
+                            <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.2931 21.293L53.4752 53.4751" stroke="#C7144C" stroke-width="4"/>
+                                <path d="M54.7767 18.2589V54.7766H18.259" stroke="#C7144C" stroke-width="4"/>
+                            </svg>
+                        </a>
+                        <div class="try__right-paragraphs">
+                            <p><span>Наверное, ты уже видела у других агентств такие требования,</span> как
+                                “ты должна быть коммуникабельна”, “английский будут преимуществом”
+                                и думаешь, подхожу ли?</p>
+                            <p><span>Так вот, для нас это не имеет значения,</span>
+                                мы тебе поможем и всему научим.</p>
+                            <p><span>А наши опытные администраторы проследят,</span> чтобы самый горячий промо-период был отработан по максимуму и ты сразу получила
+                                хороший доход.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="try__logo">
+                    <p>first
+                        lady
+                        group</p>
+                </div>
+            </div>
+            <div class="absolute">
+                <div class="try-blur"></div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="container">
+                <h1>Узнай подробнее о мире веб-моделинга в наше блоге</h1>
+                <div class="news__content">
+                    <div class="news__single">
+                        <img src="img/news/01.png" alt="">
+                        <div class="news__text">
+                            <h2>Название статьи</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... </p>
+                            <a href="">
+                                <span>подробнее</span>
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.54907 10.3218L17.9794 10.3218" stroke="#C7144C" stroke-width="2"/>
+                                    <path d="M9.3219 0.99988L18.6438 10.3218L9.3219 19.6437" stroke="#C7144C" stroke-width="2"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="news__single">
+                        <img src="img/news/02.png" alt="">
+                        <div class="news__text">
+                            <h2>Название статьи</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... </p>
+                            <a href="">
+                                <span>подробнее</span>
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.54907 10.3218L17.9794 10.3218" stroke="#C7144C" stroke-width="2"/>
+                                    <path d="M9.3219 0.99988L18.6438 10.3218L9.3219 19.6437" stroke="#C7144C" stroke-width="2"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="news__single">
+                        <img src="img/news/03.png" alt="">
+                        <div class="news__text">
+                            <h2>Название статьи</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... </p>
+                            <a href="">
+                                <span>подробнее</span>
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.54907 10.3218L17.9794 10.3218" stroke="#C7144C" stroke-width="2"/>
+                                    <path d="M9.3219 0.99988L18.6438 10.3218L9.3219 19.6437" stroke="#C7144C" stroke-width="2"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ask">
+            <div class="container">
+                <h1>Вопросы и ответы:</h1>
+                <div class="ask__content">
+                    <div class="ask__left">
+                        <h2>Что конкретно входит<br>
+                            в обязанности
+                            вебкам модели?</h2>
+                        <div class="ask__responsibilities">
+                            <div class="ask__responsibility">
+                                <div class="ask__img">
+                                    <img src="img/ask/01.png" alt="">
+                                </div>
+                                <p>Первостепенной задачей является построение конструктивного диалога с посетителями сайта.</p>
+                            </div>
+                            <div class="ask__responsibility">
+                                <div class="ask__img">
+                                    <img src="img/ask/02.png" alt="">
+                                </div>
+                                <p>Далее, необходимо как можно дольше находиться
+                                    на связи с клиентами в режиме онлайн, так как мы практикуем поминутную оплату труда.</p>
+                            </div>
+                            <div class="ask__responsibility">
+                                <div class="ask__img">
+                                    <img src="img/ask/03.png" alt="">
+                                </div>
+                                <p>Общаться с посетителями можно совершенно
+                                    на любые темы, так как каждый человек по-своему индивидуален.</p>
+                            </div>
+                            <div class="ask__responsibility">
+                                <div class="ask__img">
+                                    <img src="img/ask/04.png" alt="">
+                                </div>
+                                <p>Как показывает практика, уже через месяц работы модель общается исключительно с постоянными клиентами, щедро вознаграждающими
+                                    за проявленное к ним внимание.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ask__right">
+                        <a href="" class="ask__question">
+                            <p>Как влияет знание английского языка на
+                                общение с клиентом в видеочате?</p>
+                            <img src="img/ask/05.png" alt="">
+                        </a>
+                        <a href="" class="ask__question">
+                            <p>Сколько времени я должна уделять работе?</p>
+                            <img src="img/ask/05.png" alt="">
+                        </a>
+                        <a href="" class="ask__question">
+                            <p>От каких факторов зависит уровень
+                                заработной платы?</p>
+                            <img src="img/ask/05.png" alt="">
+                        </a>
+                        <a href="" class="ask__question">
+                            <p>Легальна ли работа вебкам модели?</p>
+                            <img src="img/ask/05.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute">
+                <div class="ask-blur"></div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <h1>остались
+                <span>вопросы?</span></h1>
+            <div class="footer__content">
+                <div class="footer__left">
+                    <h2>тогда пиши нам:</h2>
+                    <form action="">
+                        <textarea placeholder="Сообщение" name="" id="" cols="30" rows="8" required></textarea>
+                        <input placeholder="Как к тебе обращаться" type="text" required>
+                        <input placeholder="Введи свой e-mail" type="text" required>
+                        <button class="footer__button">
+                            <div class="footer__button-wrapper">
+                                <span>Заполнить анкету</span>
+                                <div class="footer__blurs">
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </button>
+                    </form>
+                </div>
+                <div class="footer__right">
+                    <h2>или свяжись с нами:</h2>
+                    <div class="footer__phones">
+                        <span>099333838383</span>
+                        <span>098323333333</span>
+                    </div>
+                    <div class="footer__socials">
+                        <a href="" class="footer__social">
+                            <img src="img/footer/02.png" alt="">
+                        </a>
+                        <a href="" class="footer__social">
+                            <img src="img/footer/03.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute">
+            <div class="footer__background-filters">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="footer__ellipses">
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/app.min.js"></script>
+</html>

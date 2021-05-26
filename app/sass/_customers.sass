@@ -1,0 +1,205 @@
+.customers
+  background: #2B0444
+  padding: 100px 0 85px 115px
+  @media (max-width: 1024px)
+    padding: 50px 0 50px 20px
+  @media (max-width: 768px)
+    padding-right: 20px
+  .container
+    position: relative
+    max-width: 100%
+    flex-direction: column
+    .customers__top
+      display: flex
+      justify-content: space-between
+      align-items: flex-end
+      @media (max-width: 768px)
+        flex-direction: column
+        align-items: normal
+      h1
+        font-family: Tenor Sans, sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 36px
+        line-height: 150%
+        text-transform: uppercase
+        color: #FFFFFF
+        max-width: 413px
+        margin-bottom: 10px
+        @media (max-width: 768px)
+          font-size: 30px
+        @media (max-width: 450px)
+          text-align: center
+      .customers__nav
+        display: flex
+        align-items: center
+        justify-content: space-between
+        width: 100vw
+        max-width: 178px
+        margin-right: 115px
+        @media (max-width: 1024px)
+          margin-right: 50px
+        @media (max-width: 768px)
+          margin-right: 15px
+          margin-top: 20px
+        @media (max-width: 450px)
+          display: none
+        .customers__next, .customers__prev
+          outline: none
+          cursor: pointer
+        .customers__numbers
+          display: flex
+          align-items: center
+          span
+            font-family: TT Norms, sans-serif
+            font-style: normal
+            font-weight: 500
+            font-size: 18px
+            line-height: 30px
+            text-transform: uppercase
+            color: #C7144C
+            width: 20px
+            display: flex
+            justify-content: center
+            &:not(:first-child)
+              font-size: 14px
+            &:last-child
+              margin-top: 2px
+    .customers__content
+      margin-top: 40px
+      display: flex
+      max-width: 100%
+      .customers__slider
+        display: flex
+        padding-bottom: 70px
+        .customers__wrapper
+          align-items: flex-start
+          .customers__slide
+            opacity: 0.1
+            padding: 10px
+            background: #FFFFFF
+            max-height: 252px
+            .customers__text
+              padding: 20px 20px 25px 20px
+              border: 1px solid #2B0444
+              display: flex
+              flex-direction: column
+              .customers__profile
+                display: flex
+                margin-bottom: 28px
+                align-items: center
+                .customers__img
+                  display: flex
+                  border-radius: 50%
+                  overflow: hidden
+                  width: 50px
+                  height: 50px
+                  margin-right: 18px
+                  img
+                    width: 100%
+                    height: 100%
+                .customers__about
+                  display: flex
+                  flex-direction: column
+                  p
+                    font-family: TT Norms, sans-serif
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 14px
+                    line-height: 25px
+                    color: #2B2B2B
+                    span
+                      font-size: 18px
+                      color: #c7144c
+                  h4
+                    font-family: TT Norms, sans-serif
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 18px
+                    line-height: 25px
+                    color: #c7144c
+                    cursor: pointer
+                    text-decoration: underline
+              .customers__feedback
+                display: flex
+                position: relative
+                max-height: 105px
+                overflow: hidden
+                p
+                  font-family: TT Norms, sans-serif
+                  font-style: normal
+                  font-weight: normal
+                  font-size: 14px
+                  line-height: 150%
+                  color: #2B2B2B
+                h4
+                  position: absolute
+                  right: 0
+                  bottom: 0
+                  background: #FFFFFF
+
+                  span
+                    font-family: TT Norms, sans-serif
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 14px
+                    line-height: 150%
+                    color: #2B2B2B
+                    &:last-child
+                      font-weight: 500
+                      color: #c7144c
+                      cursor: pointer
+                      text-decoration: underline
+          .customers__slide_open
+            max-height: none
+            .customers__text
+              .customers__feedback
+                max-height: none
+                overflow: visible
+                h4
+                  bottom: -20px
+                  span
+                    &:first-child
+                      display: none
+          .swiper-slide-active
+            opacity: 1
+          .swiper-slide-prev
+            opacity: 1
+        .customers-progressbar
+          top: auto
+          bottom: 0
+          background: #DEBA7B
+          height: 4px
+          max-width: calc(100% - 115px)
+          @media (max-width: 1024px)
+            max-width: calc(100% - 20px)
+          @media (max-width: 768px)
+            max-width: 100%
+          &:after
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            height: 1.5px
+            background: #2B0444
+            width: 100%
+          &:before
+            content: ''
+            position: absolute
+            bottom: 0
+            left: 0
+            height: 1.5px
+            background: #2B0444
+            width: 100%
+          span
+            background: #DEBA7B
+            min-height: 4px
+            z-index: 10
+
+
+
+
+
+
+
+

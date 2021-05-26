@@ -1,0 +1,168 @@
+.banner
+  background-image: url("../img/banner/01.png")
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  position: relative
+  .container
+    max-width: 1215px
+    flex-direction: column
+    z-index: 3
+    position: relative
+    .banner__text
+      display: flex
+      flex-direction: column
+      position: relative
+      margin-top: 293px
+      margin-left: 22px
+      margin-right: 22px
+      @media (max-width: 768px)
+        margin-top: 150px
+      h1
+        font-family: Tenor Sans, sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 8.2vw
+        line-height: 150px
+        text-transform: uppercase
+        color: #FFFFFF
+        display: flex
+        flex-direction: column
+        width: 100%
+        @media (max-width: 768px)
+          font-size: 80px
+        @media (max-width: 536px)
+          text-align: center
+          display: block
+        span
+          margin-left: auto
+      p
+        position: absolute
+        &:first-child
+          font-family: Tenor Sans, sans-serif
+          font-style: normal
+          font-weight: normal
+          max-width: 302px
+          top: 33px
+          right: 98px
+          font-size: 18px
+          line-height: 166%
+          text-transform: uppercase
+          color: #FFFFFF
+          @media (max-width: 1024px)
+            right: 0
+            font-size: 16px
+          @media (max-width: 768px)
+            top: -70px
+        &:last-child
+          font-family: TT Norms, sans-serif
+          font-style: normal
+          font-weight: 500
+          font-size: 14px
+          line-height: 150%
+          color: #FFFFFF
+          max-width: 190px
+          bottom: 41px
+          left: 200px
+          z-index: 2
+          @media (max-width: 1024px)
+            left: 10px
+          @media (max-width: 768px)
+            bottom: -50px
+          .banner-round
+            width: 56px
+            height: 56px
+            background-color: #C7144C
+            position: absolute
+            border-radius: 50%
+            left: -20px
+            top: -20px
+            z-index: -1
+    .banner__link
+      display: flex
+      position: relative
+      margin: 37px auto 200px auto
+      @media (max-width: 768px)
+        margin-top: 100px
+        margin-bottom: 100px
+      a
+        background: linear-gradient(101.98deg, #EFC986 29.25%, #CF9838 100.31%)
+        border: 1px solid #EEC639
+        box-sizing: border-box
+        box-shadow: inset 0px -10px 30px #F3D7A5
+        border-radius: 900px
+        padding: 27px 37px 28px 37px
+        display: flex
+        align-items: center
+        position: relative
+        overflow: hidden
+        span
+          font-family: TT Norms, sans-serif
+          font-style: normal
+          font-weight: bold
+          font-size: 14px
+          line-height: 17px
+          text-transform: uppercase
+          color: #885932
+          margin: 0 10px
+          position: relative
+          z-index: 1
+        svg
+          position: relative
+          z-index: 1
+        .banner__blurs
+          div
+            &:first-child
+              position: absolute
+              width: 156.98px
+              height: 62.25px
+              left: 54px
+              bottom: 55px
+              background: #FADFBE
+              opacity: 0.5
+              filter: blur(20px)
+              transform: rotate(-45deg)
+            &:last-child
+              position: absolute
+              width: 156.98px
+              height: 37.5px
+              background: #FADFBE
+              opacity: 0.7
+              filter: blur(20px)
+              transform: rotate(-45deg)
+              right: 29px
+              top: 32px
+  .absolute
+    .banner__circles
+      div
+        position: absolute
+        width: 883px
+        height: 883px
+        z-index: 2
+        border: 1px solid #DEBA7B
+        border-radius: 50%
+        @media (max-width: 768px)
+          width: 500px
+          height: 500px
+        &:first-child
+          left: -226px
+          top: -686px
+          @media (max-width: 768px)
+            left: -100px
+            top: -200px
+        &:last-child
+          top: -194px
+          transform: translateX(-50%)
+          left: 50%
+          @media (max-width: 768px)
+            width: 700px
+            height: 700px
+            top: -100px
+    .banner-background
+      width: 100%
+      height: 100%
+      position: absolute
+      top: 0
+      left: 0
+      z-index: 1
+      background: rgba(0,0,0,0.2)
