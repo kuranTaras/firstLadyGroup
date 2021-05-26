@@ -14,7 +14,7 @@ $(window).on("load" , function () {
         breakpoints: {
             1024: {
                 spaceBetween: 115,
-            }
+            },
         }
     });
     interiorSwiper.on('slideChange', () => {
