@@ -107,6 +107,11 @@
               border-radius: 50%
               border: 2px solid #C7144C
               top: 7px
+              animation-name: best-circle
+              animation-timing-function: linear
+              animation-duration: 2s
+              animation-iteration-count: infinite
+              animation-direction: alternate
             span
               font-weight: 500
         h4
@@ -140,6 +145,9 @@
             font-size: 80px
         .best__arrow
           margin: -15px auto 5px -15px
+          transition-duration: 0.3s
+          &:hover
+            transform: scale(1.2)
   .absolute
     .best-logo
       position: absolute
@@ -156,6 +164,11 @@
       -webkit-text-stroke-width: 1px
       -webkit-text-stroke-color: #DEBA7B
       color: transparent
+      animation-name: best-logo
+      animation-timing-function: linear
+      animation-duration: 3s
+      animation-iteration-count: infinite
+      animation-direction: alternate
       @media (max-width: 1024px)
         left: 20px
         top: 80px
@@ -172,7 +185,16 @@
       filter: blur(300px)
       border-radius: 50%
       transform: rotate(-105deg)
-
+@keyframes best-logo
+  0%
+    transform: scale(1)
+  100%
+    transform: scale(1.05)
+@keyframes best-circle
+  0%
+    transform: translateX(-50%) scale(1)
+  100%
+    transform: translateX(-50%) scale(1.5)
 
 
 

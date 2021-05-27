@@ -80,10 +80,20 @@
             left: -20px
             top: -20px
             z-index: -1
+            animation-name: banner-round
+            animation-timing-function: linear
+            animation-duration: 2s
+            animation-iteration-count: infinite
+            animation-direction: alternate
     .banner__link
       display: flex
       position: relative
       margin: 37px auto 200px auto
+      &:hover
+        svg
+          transform: scale(1.2)
+        span
+          transform: scale(1.05)
       @media (max-width: 768px)
         margin-top: 100px
         margin-bottom: 100px
@@ -99,6 +109,7 @@
         position: relative
         overflow: hidden
         span
+          transition-duration: 0.3s
           font-family: TT Norms, sans-serif
           font-style: normal
           font-weight: bold
@@ -112,6 +123,7 @@
         svg
           position: relative
           z-index: 1
+          transition-duration: 0.3s
         .banner__blurs
           div
             &:first-child
@@ -189,6 +201,11 @@
     transform: translate(-50%, 0%)
   100%
     transform: translate(-50%, -10%)
+@keyframes banner-round
+  0%
+    transform: scale(1)
+  100%
+    transform: scale(1.3)
 
 
 

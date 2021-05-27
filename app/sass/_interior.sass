@@ -85,6 +85,9 @@
             border: 2px solid #C7144C
             opacity: 1
             margin: 0 20px
+            transition-duration: 0.3s
+            &:hover
+              transform: scale(1.2)
           .swiper-pagination-bullet-active
             background: #c7144c
         .interior__dots
@@ -92,17 +95,7 @@
           width: 100%
           justify-content: center
           bottom: 0
-          left: 0
           display: flex
-          .interior-dot
-            width: 10px
-            height: 10px
-            border-radius: 50%
-            transition-duration: 0.5s
-            border: 2px solid #C7144C
-            margin: 0 20px
-          .interior-dot_active
-            background: #C7144C
         .interior__nav
           position: absolute
           right: 8.5%
@@ -137,6 +130,10 @@
               display: none
             svg
               cursor: pointer
+              transition-duration: 0.3s
+              outline: none
+              &:hover
+                transform: scale(1.2)
             .interior__numbers
               display: flex
               div

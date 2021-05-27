@@ -49,6 +49,11 @@
         display: flex
         position: relative
         margin: 0 auto 0 0
+        &:hover
+          svg
+            transform: scale(1.2)
+          span
+            transform: scale(1.05)
         a
           background: linear-gradient(101.98deg, #EFC986 29.25%, #CF9838 100.31%)
           border: 1px solid #EEC639
@@ -73,12 +78,14 @@
             color: #885932
             margin: 0 10px
             position: relative
+            transition-duration: 0.3s
             z-index: 1
             @media (max-width: 768px)
               font-size: 13px
           svg
             position: relative
             z-index: 1
+            transition-duration: 0.3s
           .welcome__blurs
             div
               &:first-child
@@ -145,6 +152,11 @@
           align-items: center
           justify-content: center
           background: #C7144C
+          animation-name: banner-round
+          animation-timing-function: linear
+          animation-duration: 2s
+          animation-iteration-count: infinite
+          animation-direction: alternate
           img
             width: 20px
             height: 20px
@@ -181,12 +193,22 @@
         &:first-child
           left: -220px
           top: -416px
+          animation-name: banner-circle-1
+          animation-timing-function: linear
+          animation-duration: 5s
+          animation-iteration-count: infinite
+          animation-direction: alternate
           @media (max-width: 768px)
             left: -130px
             top: -130px
         &:last-child
           top: -12px
           left: calc(50% + 43px)
+          animation-name: banner-circle-2
+          animation-timing-function: linear
+          animation-duration: 5s
+          animation-iteration-count: infinite
+          animation-direction: alternate
           transform: translateX(-50%)
           @media (max-width: 768px)
             width: 883px
