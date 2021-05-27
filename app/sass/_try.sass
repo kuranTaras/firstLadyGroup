@@ -117,6 +117,11 @@
             display: flex
             position: relative
             margin: 0 auto 30px auto
+            &:hover
+              svg
+                transform: scale(1.2)
+              span
+                transform: scale(1.05)
             a
               background: linear-gradient(101.98deg, #EFC986 29.25%, #CF9838 100.31%)
               border: 1px solid #EEC639
@@ -141,10 +146,12 @@
                 color: #885932
                 margin: 0 10px
                 position: relative
+                transition-duration: 0.3s
                 z-index: 1
               svg
                 position: relative
                 z-index: 1
+                transition-duration: 0.3s
               .try__blurs
                 div
                   &:first-child
