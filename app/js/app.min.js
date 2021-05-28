@@ -111,7 +111,25 @@ $(window).on("load" , function () {
     $('.what__slide').each(function (index) {
         $('.what__slide h6').eq(index).text('0' + (index + 1))
     })
+    $('.header-contact').on('click', () => {
+        $('.phone').addClass('phone_active')
+        $('body').addClass('body-overflow')
+    })
+    $('.phone-background').on('click', () => {
+        $('.phone').removeClass('phone_active')
+        $('body').removeClass('body-overflow')
+    })
 
+    $('.open-form').on('click', () => {
+        $('.form').addClass('form_active')
+        $('body').addClass('body-overflow')
+    })
+
+
+    $('.form-background').on('click', () => {
+        $('.form').removeClass('form_active')
+        $('body').removeClass('body-overflow')
+    })
 })
 
 
