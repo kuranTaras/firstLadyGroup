@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Useful meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.min.css">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <a class="header-logo" href="index.html">FLG</a>
+        <a class="header-contact" href="">Связаться с нами</a>
+    </div>
+</header>
+<div class="main">
+    <section class="thanks">
+        <div class="container">
+            <div class="thanks__text">
+                <h1>Cпасибо, наш менеджер свяжется с вами в кратчайшее время!</h1>
+            </div>
+            <div class="thanks__link">
+                <a href="index.html">
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="15" height="15">
+                            <rect x="3.05176e-05" width="15" height="15" fill="url(#pattern0)"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <circle cx="6.19568" cy="6.19546" r="8.80435" fill="#885932"/>
+                        </g>
+                        <defs>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0" transform="scale(0.01)"/>
+                            </pattern>
+                            <image id="image0" width="100" height="100" xlink:href="data:image/png;base64,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"/>
+                        </defs>
+                    </svg>
+                    <span>Вернутся на главную</span>
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="15" height="15">
+                            <rect x="3.05176e-05" width="15" height="15" fill="url(#pattern0)"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <circle cx="6.19568" cy="6.19546" r="8.80435" fill="#885932"/>
+                        </g>
+                        <defs>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0" transform="scale(0.01)"/>
+                            </pattern>
+                            <image id="image0" width="100" height="100" xlink:href="data:image/png;base64,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"/>
+                        </defs>
+                    </svg>
+                    <div class="thanks__blurs">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="absolute">
+            <div class="thanks__circles">
+                <div></div>
+                <div></div>
+            </div>
+            <div class="thanks-background"></div>
+        </div>
+    </section>
+</div>
+<footer class="footer">
+    <div class="container">
+        <h1>остались
+            <span>вопросы?</span></h1>
+        <div class="footer__content">
+            <div class="footer__left">
+                <h2>тогда пиши нам:</h2>
+                <form action="">
+                    <textarea placeholder="Сообщение" name="" id="" cols="30" rows="8" required></textarea>
+                    <input placeholder="Как к тебе обращаться" type="text" required>
+                    <input placeholder="Введи свой e-mail" type="text" required>
+                    <button class="footer__button">
+                        <div class="footer__button-wrapper">
+                            <span>отправить сообщение</span>
+                            <div class="footer__blurs">
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </button>
+                </form>
+            </div>
+            <div class="footer__right">
+                <h2>или свяжись с нами:</h2>
+                <div class="footer__phones">
+                    <span>099333838383</span>
+                    <span>098323333333</span>
+                </div>
+                <div class="footer__socials">
+                    <a href="" class="footer__social">
+                        <img src="img/footer/02.png" alt="">
+                    </a>
+                    <a href="" class="footer__social">
+                        <img src="img/footer/03.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="absolute">
+        <div class="footer__background-filters">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="footer__ellipses">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/app.min.js"></script>
+</html>
